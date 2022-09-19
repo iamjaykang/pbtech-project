@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../images/logo.png";
 import xMarkIco from "../../images/circle-xmark-light.svg";
 
-const LaptopFinderHeader = ({ setShowModal }) => {
+const LaptopFinderHeader = ({ setLaptopSelector }) => {
   return (
     <div className="flex flex-col items-start justify-between border-b border-solid border-slate-200 bg-sky-900">
       <div className="pl-20 border-b border-solid border-white w-full">
@@ -13,7 +13,7 @@ const LaptopFinderHeader = ({ setShowModal }) => {
       </div>
       <div className="h-10">
       </div>
-      <div className="flex flex-row justify-evenly text-white w-full text-center">
+      <div className="bg-white flex flex-row justify-evenly text-black w-full text-center">
         <a className="border border-solid rounded-r-lg border-slate-300 w-full">
             Category
         </a>
