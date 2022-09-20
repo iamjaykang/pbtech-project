@@ -10,6 +10,7 @@ import ContactAndFind from "../components/contactAndFind/ContactAndFind";
 import Brands from "../components/brands/Brands";
 import TopSellerCarousel from '../components/topSellerCarousel/TopSellerCarousel';
 import Benefits from '../components/benefits/Benefits';
+import Footer from '../components/footer/Footer';
 
 
 function Home() {
@@ -81,6 +82,7 @@ function Home() {
       <Brands />
       <TopSellerCarousel />
       <Benefits />
+      <Footer />
       </div>
     </>
   );

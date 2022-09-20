@@ -1,0 +1,175 @@
+.container {
+    width: 100%;
+    background: #2C2C2C;
+    
+}
+.innerContainer {
+    width:90%;
+    position: relative;
+    border-color: white;
+    margin: auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.lowerContainer {
+    width:90%;
+
+    position: relative;
+    border-color: white;
+    margin: auto;
+    flex-direction: row;
+    display: flex;
+
+}
+.icon {
+    height: 20px;
+    width: 30px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.iconTitle {
+    display: flex;
+    margin-right: 260px;
+}
+
+.departmentSect {
+    flex-direction: row;
+    display: flex;
+}
+
+.title {
+    color: #C4C4C4;
+    font-size: 31px;
+}
+
+.title2 {
+    color: #C4C4C4;
+    margin-left: 150px;
+}
+
+.title3 {
+    color: #C4C4C4;
+    margin-left: 90px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.links2 {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.links3 {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 60px;
+    white-space: nowrap;
+    flex-direction: column;
+    display: flex;
+}
+
+.links > li {
+    margin-bottom: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.links2 > li {
+    margin-bottom: 10px;
+    margin-right: 70px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.input {
+    padding: 15px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #EF8122;
+    padding: 17px 20px;
+    width: 345px;
+    border-radius: 50px;
+    border-style: none;
+    color: white;
+    font-size: 19px;
+}
+
+.signUpDiv {
+    border-style: solid;
+}
+
+.checkbox {
+    height:  20px;
+    width: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.checkdiv {
+    display: flex;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.bottomDiv {
+    background: #3E3D3D;
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    white-space: nowrap;
+    margin-top: 60px;
+    display: flex;
+    padding: 0;
+}
+
+.bottomTitle {
+    color: #C4C4C4;
+}
+
+.bottomText {
+    color: #C4C4C4;
+    font-size: 22px;
+    margin: 22px 35px
+}
+
+.socials {
+    margin-left: 310px;
+}
+
+.socialLogos {
+    height: 35px;
+    width: 35px;
+    margin:20px 10px;
+    cursor: pointer;
+}
+
+.bottomTextLink {
+    color: #C4C4C4;
+    font-size: 22px;
+    margin: 22px 35px;
+    cursor: pointer;
+}
