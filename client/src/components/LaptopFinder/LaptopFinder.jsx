@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LaptopChoices from "./LaptopChoices";
 import LaptopFeatures from "./LaptopFeatures";
 import LaptopFinderActivities from "./LaptopFinderActivities";
 import LaptopFinderHome from "./LaptopFinderHome";
@@ -14,6 +15,8 @@ export default function LaptopFinder({ step, prevStep, nextStep, closeModal }) {
         return <LaptopFinderActivities closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       case 3:
         return <LaptopFeatures closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
+      case 4:
+        return <LaptopChoices closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       default:
         return null;
     }
