@@ -15,11 +15,16 @@ const Home = () => {
   // proceed to the next step
   const nextStep = () => {
     setStep(step + 1);
+    console.log(step)
   };
 
   // close Modal
   const closeModal = () => {
     setStep(0);
+  };
+
+  const restartModal = () => {
+    setStep(1);
   };
 
   return (
@@ -43,7 +48,7 @@ const Home = () => {
       {showLaptopSelector ? (
         <LaptopSelector setLaptopSelector={setLaptopSelector} />
       ) : null}
-        <LaptopFinder closeModal={closeModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
+        <LaptopFinder closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
     </div>
   );
 };

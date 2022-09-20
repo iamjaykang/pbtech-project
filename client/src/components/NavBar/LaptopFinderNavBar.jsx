@@ -8,22 +8,28 @@ import featuresBtnActive from "../../images/features-active.png";
 import choicesBtn from "../../images/choices-non-active.png";
 import choicesBtnActive from "../../images/choices-active.png";
 
-const LaptopFinderNavBar = ({setStep, step}) => {
+const LaptopFinderNavBar = ({ setStep, step }) => {
   return (
     <div>
-      <div className="bg-white flex flex-row justify-evenly text-black w-full text-center">
-        <a className="border border-solid rounded-r-lg border-slate-300 w-full">
-          FIND ME A LAPTOP
-        </a>
-        <a className="border border-solid rounded-r-lg border-slate-300 w-full">
-          ACTIVITIES
-        </a>
-        <a className="border border-solid rounded-r-lg border-slate-300 w-full">
-          FEATURES
-        </a>
-        <a className="border border-solid rounded-r-lg border-slate-300 w-full">
-          OUR TOP CHOICES
-        </a>
+      <div className="pt-4 px-24 gap-10 bg-white flex flex-row text-black w-full text-center mx-auto items-end">
+        <button onClick={() => setStep(1)} className="w-full">
+          <img
+            className=""
+            src={step === 1 ? findLaptopBtn : findLaptopBtnActive}
+          />
+        </button>
+        <button onClick={() => setStep(2)} className="w-full">
+          <img
+            className=""
+            src={step < 2 ? activitiesBtn : activitiesBtnActive}
+          />
+        </button>
+        <button onClick={() => setStep(3)} className="w-full">
+          <img className="" src={step < 3 ? featuresBtn : featuresBtnActive} />
+        </button>
+        <button onClick={() => setStep(4)} className="w-full">
+          <img className="" src={step < 4 ? choicesBtn : choicesBtnActive} />
+        </button>
       </div>
     </div>
   );

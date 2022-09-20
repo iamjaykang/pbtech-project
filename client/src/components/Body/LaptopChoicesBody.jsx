@@ -2,14 +2,17 @@ import React from "react";
 import PriceSlider from "../Slider/PriceSlider";
 import businessImg from "../../images/business.png";
 import ChoicesSwiper from "../Carousel/ChoicesSwiper";
+import RestartButton from "../Buttons/RestartButton";
 
-const LaptopChoicesBody = ({ prevStep, nextStep }) => {
+const LaptopChoicesBody = ({ prevStep, nextStep, restartModal }) => {
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
-        <button onClick={prevStep} className="flex gap-1 mt-6">
+        {/* <button 
+        onClick={restartModal} className="flex gap-1 mt-6">
           <span className="text-pb-dark-gray pl-6 mb-11">Restart</span>
-        </button>
+        </button> */}
+        <RestartButton restartModal={restartModal} />
         <div className="">
           <h1 className="text-pb-text text-4xl ml-20 mb-10">
             Our top recommendation is...
@@ -21,12 +24,18 @@ const LaptopChoicesBody = ({ prevStep, nextStep }) => {
           </div>
           <div className="flex flex-around w-full gap-6 mb-24 pl-20">
             <div className="w-[400px] h-[200px] bg-white border border-black rounded-lg">
-                <h3 className="pl-3.5 pt-3.5 text-lg font-bold">Frequently bought together</h3>
-                <ChoicesSwiper />
+              <h3 className="pl-3.5 pt-3.5 text-lg font-bold">
+                Frequently bought together
+              </h3>
+              <ChoicesSwiper />
             </div>
             <div>
               <div className="w-[280px] h-[170px] bg-white border border-black rounded-t-lg">
-                <img className="w-max" src={businessImg} alt="business-gift-card" />
+                <img
+                  className="w-max"
+                  src={businessImg}
+                  alt="business-gift-card"
+                />
               </div>
               <div className="w-[280px] h-[30px] bg-pb-text text-white font-bold text-base text-center bg-white border-b border-l border-r border-black rounded-b-lg">
                 Gift card offer for businesses
