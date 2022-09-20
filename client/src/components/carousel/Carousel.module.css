@@ -41,7 +41,7 @@
     opacity: 66%;
     width: 12px;
     height: 12px;
-    background: white;
+    background: #e6f0f6e0;
     border: none;
     position: relative;
     bottom: 50px;
@@ -51,7 +51,7 @@
 
 .indicators > .previous {
     position: relative;
-    background: white;
+    background: #e6f0f6e0;
     transform: scaleX(-1);
     margin-right: 45%;
     bottom: 475px;
@@ -79,7 +79,7 @@
 
 
 .overlayBG {
-    background: rgba(255, 255, 255, 0.891);
+    background: #e6f0f6e0;
     z-index: 10;
     position: absolute;
     color: #0B5078;
