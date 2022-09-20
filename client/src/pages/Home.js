@@ -4,6 +4,7 @@ import image1 from "../components/carousel/carousel1.png";
 import image2 from "../components/carousel/carousel2.jpg";
 import image3 from "../components/carousel/carousel3.jpg";
 import carouselStyles from "../components/carousel/Carousel.module.css";
+import LaptopTypeButtons from "../components/laptopTypeButtons/LaptopTypeButtons";
 
 function Home() {
   return (
@@ -68,6 +69,7 @@ function Home() {
           </div>
         </CarouselItem>
       </Carousel>
+      <LaptopTypeButtons />
     </>
   );
 }
