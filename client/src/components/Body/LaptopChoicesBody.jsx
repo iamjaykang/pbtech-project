@@ -1,6 +1,7 @@
 import React from "react";
 import PriceSlider from "../Slider/PriceSlider";
 import businessImg from "../../images/business.png";
+import ChoicesSwiper from "../Carousel/ChoicesSwiper";
 
 const LaptopChoicesBody = ({ prevStep, nextStep }) => {
   return (
@@ -21,6 +22,7 @@ const LaptopChoicesBody = ({ prevStep, nextStep }) => {
           <div className="flex flex-around w-full gap-6 mb-24 pl-20">
             <div className="w-[400px] h-[200px] bg-white border border-black rounded-lg">
                 <h3 className="pl-3.5 pt-3.5 text-lg font-bold">Frequently bought together</h3>
+                <ChoicesSwiper />
             </div>
             <div>
               <div className="w-[280px] h-[170px] bg-white border border-black rounded-t-lg">

@@ -43,7 +43,7 @@ const Home = () => {
       {showLaptopSelector ? (
         <LaptopSelector setLaptopSelector={setLaptopSelector} />
       ) : null}
-        <LaptopFinder closeModal={closeModal} step={step} prevStep={prevStep} nextStep={nextStep}/>
+        <LaptopFinder closeModal={closeModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
     </div>
   );
 };
