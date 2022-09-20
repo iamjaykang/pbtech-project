@@ -4,7 +4,7 @@
     margin-bottom: 80px;
     font-size: 55px;
     position: relative;
-    top: 145px;
+
 }
 
 .container {
@@ -15,7 +15,7 @@
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
-    top: 145px;
+
 }
 
 .card {

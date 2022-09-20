@@ -1,3 +1,4 @@
+import HomeStyles from './Home.module.css'
 import Navbar from "../components/navbar/Navbar";
 import Carousel, { CarouselItem } from "../components/carousel/Carousel";
 import image1 from "../components/carousel/carousel1.png";
@@ -6,11 +7,13 @@ import image3 from "../components/carousel/carousel3.jpg";
 import carouselStyles from "../components/carousel/Carousel.module.css";
 import LaptopTypeButtons from "../components/laptopTypeButtons/LaptopTypeButtons";
 import ContactAndFind from "../components/contactAndFind/ContactAndFind";
+import Brands from "../components/brands/Brands";
 
 function Home() {
   return (
     <>
       <Navbar />
+      <div className={HomeStyles.page}>
       <Carousel>
         <CarouselItem>
           <img
@@ -72,6 +75,8 @@ function Home() {
       </Carousel>
       <LaptopTypeButtons />
       <ContactAndFind />
+      <Brands />
+      </div>
     </>
   );
 }
