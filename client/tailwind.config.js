@@ -14,6 +14,7 @@ module.exports = {
         'pb-orange': '#EF8122',
         'pb-light-gray': '#F5F5F5',
         'pb-gray': '#C5C5C5',
+        'pb-gray2': '#D5D5D5',
       },
       spacing: {
         '46': '184px',

@@ -15,7 +15,7 @@ const LaptopFinderBody = ({ nextStep, prevStep }) => {
         </div>
         <div className="mx-auto text-pb-dark-blue text-2xl leading-relaxed flex flex-col w-full gap-4">
           <div className="flex flex-center w-full gap-6 mb-6 pl-48">
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -27,7 +27,7 @@ const LaptopFinderBody = ({ nextStep, prevStep }) => {
               </span>
               <h3>Personal</h3>
             </button>
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -43,7 +43,7 @@ const LaptopFinderBody = ({ nextStep, prevStep }) => {
           <div className="flex flex-around w-full gap-6 mb-24 pl-48">
             <button
               onClick={nextStep}
-              className="bg-white w-56 h-40 rounded-lg fill-pb-orange"
+              className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl"
             >
               <span>
                 <svg
@@ -56,7 +56,7 @@ const LaptopFinderBody = ({ nextStep, prevStep }) => {
               </span>
               <h3>Work</h3>
             </button>
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"

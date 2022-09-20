@@ -20,24 +20,24 @@ const LaptopChoicesBody = ({ prevStep, nextStep, restartModal }) => {
         </div>
         <div className="mx-auto text-pb-dark-blue text-2xl leading-relaxed flex flex-col w-full gap-4">
           <div className="flex flex-center w-full gap-6 mb-4 pl-20">
-            <div className="w-[700px] h-52 bg-white border border-black rounded-lg"></div>
+            <div className="w-[700px] h-52 bg-white border border-black rounded-lg shadow-lg"></div>
           </div>
           <div className="flex flex-around w-full gap-6 mb-24 pl-20">
-            <div className="w-[400px] h-[200px] bg-white border border-black rounded-lg">
+            <div className="w-[400px] h-[200px] bg-white border border-pb-gray2 rounded-lg shadow-2xl">
               <h3 className="pl-3.5 pt-3.5 text-lg font-bold">
                 Frequently bought together
               </h3>
               <ChoicesSwiper />
             </div>
             <div>
-              <div className="w-[280px] h-[170px] bg-white border border-black rounded-t-lg">
+              <div className="w-[280px] h-[170px] bg-white border border-pb-gray2 rounded-t-lg shadow-2xl">
                 <img
-                  className="w-max"
+                  className="min-w-[280px] min-h-[170px]"
                   src={businessImg}
                   alt="business-gift-card"
                 />
               </div>
-              <div className="w-[280px] h-[30px] bg-pb-text text-white font-bold text-base text-center bg-white border-b border-l border-r border-black rounded-b-lg">
+              <div className="w-[280px] h-[30px] bg-pb-text text-white font-bold text-base text-center border-b border-l border-r border-pb-gray2 rounded-b-lg shadow-2xl">
                 Gift card offer for businesses
               </div>
             </div>

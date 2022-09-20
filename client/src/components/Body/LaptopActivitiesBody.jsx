@@ -15,7 +15,7 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
         </div>
         <div className="mx-auto text-pb-dark-blue text-2xl leading-relaxed flex flex-col w-full gap-4">
           <div className="flex flex-center w-full gap-6 mb-6 pl-20">
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -27,7 +27,7 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
               </span>
               <h3>Programming</h3>
             </button>
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -39,7 +39,7 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
               </span>
               <h3>Design</h3>
             </button>
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -53,7 +53,7 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
             </button>
           </div>
           <div className="flex flex-around w-full gap-6 mb-24 pl-52">
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl">
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -67,7 +67,7 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
             </button>
             <button
               onClick={nextStep}
-              className="bg-white w-56 h-40 rounded-lg fill-pb-orange"
+              className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl"
             >
               <span>
                 <svg
