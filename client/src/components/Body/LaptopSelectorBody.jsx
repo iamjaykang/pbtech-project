@@ -4,6 +4,7 @@ import gamingIco from "../../images/gaming.png";
 import workIco from "../../images/work.png";
 import arrowLeftIco from "../../images/arrow-left-light.svg";
 import categoryImg from "../../images/categoryImg.png";
+import personalUseImg from "../../images/personal-use.png";
 
 const LaptopFinderBody = () => {
   return (
@@ -22,7 +23,7 @@ const LaptopFinderBody = () => {
             <button className="bg-white w-48 h-32 rounded-lg">
               <h3>Personal Use</h3>
               <span>
-                <img src="" />
+                <img className="mx-auto" src={personalUseImg} />
               </span>
             </button>
             <button className="bg-white w-48 h-32 rounded-lg">
