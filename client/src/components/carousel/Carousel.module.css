@@ -3,7 +3,7 @@
     overflow: hidden; 
     position: relative;
     width: 100%;
-    
+    top: 145px;
 }
 
 /* line 13: keeps items in 1 line, prevents the default behaviour of breaking into a new line

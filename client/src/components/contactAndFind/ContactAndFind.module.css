@@ -1,0 +1,114 @@
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 120px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    top: 145px;
+}
+
+
+.phoebe {
+    float: right;
+    margin-right: 30px;
+    position: relative;
+    bottom: 336px;
+    height: 350px;
+    
+}
+
+.info {
+    color: white;
+    margin: 45px 55px;
+    font-size: 22px;
+    
+}
+
+.button {
+    margin-top: 25px;
+    background: #EF8122;
+    border-color: white;
+    border-radius: 45px;
+    border-style: solid;
+    color: white;
+    font-size: 20px;
+    padding: 12px 50px;
+}
+
+.phoebeDiv {
+    background: #EF8122;
+    width: 49%;
+    height: 380px;
+    z-index: 3;
+    border-radius: 8px;
+    
+}
+
+.button2 {
+    margin-top: 25px;
+    background: #EF8122;
+    border-radius: 45px;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 50px;
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.318) ;
+}
+
+
+.finderDiv {
+    background: #0B5078;
+    width: 49%;
+    height: 380px;
+    z-index: 3;
+    border-radius: 8px;
+}
+
+.laptop {
+    float: right;
+    margin-right: -140px;
+    position: relative;
+    bottom: 336px;
+    height: 350px;
+}
+
+.outerImage {
+    scale: 1.3;
+    margin-top: 395px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangle1 {
+    scale: 1.3;
+    margin-top: 475px;
+    left: 65px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangle2 {
+    scale: 0.7;
+    margin-top: 507px;
+    left: 97px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangle3 {
+    scale: 0.75;
+    margin-top: 473px;
+    left: 157px;
+    position: absolute;
+    z-index: 1;
+}
+
+.rectangle4 {
+    scale: 0.4;
+    margin-top: 455px;
+    left: 175px;
+    position: absolute;
+    z-index: 5;
+}
