@@ -1,5 +1,4 @@
 import React from "react";
-import Home from "../../pages/Home";
 import LaptopSelectorBody from "../Body/LaptopSelectorBody";
 import LaptopSelectorHeader from "../Header/LaptopSelectorHeader";
 

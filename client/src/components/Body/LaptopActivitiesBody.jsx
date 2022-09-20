@@ -1,13 +1,13 @@
 import React from 'react'
 import PriceSlider from "../Slider/PriceSlider";
 
-const LaptopActivitiesBody = () => {
+const LaptopActivitiesBody = ({prevStep, nextStep}) => {
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
     <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
-      <a className="flex gap-1 mt-3 mb-5">
+      <button onClick={prevStep} className="flex gap-1 mt-3 mb-5">
         <span className="text-pb-dark-gray pl-7 mb-10">Back</span>
-      </a>
+      </button>
       <div className="">
         <h1 className="text-pb-text text-4xl mb-10 text-center">Which activities does your work invole?</h1>
       </div>
@@ -63,7 +63,7 @@ const LaptopActivitiesBody = () => {
             </span>
             <h3>Working with Data Files</h3>
           </button>
-          <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+          <button onClick={nextStep} className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
             <span>
               <svg
                 className="h-10 mx-auto"

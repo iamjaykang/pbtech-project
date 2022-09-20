@@ -1,28 +1,19 @@
 import React, { useState } from "react";
+import LaptopFeatures from "./LaptopFeatures";
 import LaptopFinderActivities from "./LaptopFinderActivities";
-import LaptopFinderActivities from "./LaptopFinderHome";
-
-const [step, setStep] = useState(0);
+import LaptopFinderHome from "./LaptopFinderHome";
 
 // go back to previous step
-const prevStep = () => {
-  setStep(step - 1);
-};
 
-// proceed to the next step
-const nextStep = () => {
-  setStep(step + 1);
-};
-
-export default function LaptopFinder() {
+export default function LaptopFinder({ step, prevStep, nextStep, closeModal }) {
   const conditionalComponent = () => {
-    switch (page) {
+    switch (step) {
       case 1:
-        return <LaptopFinderHome prevStep={prevStep} nextStep={nextStep} />;
+        return <LaptopFinderHome closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       case 2:
-        return <LaptopFinderActivities prevStep={prevStep} nextStep={nextStep} />;
-    //   case 3:
-    //     return <ThirdStep />;
+        return <LaptopFinderActivities closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
+      case 3:
+        return <LaptopFeatures closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       default:
         return null;
     }

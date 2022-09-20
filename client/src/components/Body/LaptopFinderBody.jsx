@@ -1,15 +1,17 @@
 import React from "react";
 import PriceSlider from "../Slider/PriceSlider";
 
-const LaptopFinderBody = () => {
+const LaptopFinderBody = ({ nextStep, prevStep }) => {
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
-        <a className="flex gap-1 mt-3 mb-5">
+        <button onClick={prevStep} className="flex gap-1 mt-3 mb-5">
           <span className="text-pb-dark-gray pl-7">Back</span>
-        </a>
+        </button>
         <div className="">
-          <h1 className="text-pb-text text-4xl mb-10 text-center">What do you mainly use your laptop for?</h1>
+          <h1 className="text-pb-text text-4xl mb-10 text-center">
+            What do you mainly use your laptop for?
+          </h1>
         </div>
         <div className="mx-auto text-pb-dark-blue text-2xl leading-relaxed flex flex-col w-full gap-4">
           <div className="flex flex-center w-full gap-6 mb-6 pl-48">
@@ -39,7 +41,10 @@ const LaptopFinderBody = () => {
             </button>
           </div>
           <div className="flex flex-around w-full gap-6 mb-24 pl-48">
-            <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+            <button
+              onClick={nextStep}
+              className="bg-white w-56 h-40 rounded-lg fill-pb-orange"
+            >
               <span>
                 <svg
                   className="h-10 mx-auto"
@@ -71,7 +76,7 @@ const LaptopFinderBody = () => {
           Most popular laptops
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-            We found 15 products for you!
+          We found 15 products for you!
         </h3>
         <PriceSlider />
       </div>

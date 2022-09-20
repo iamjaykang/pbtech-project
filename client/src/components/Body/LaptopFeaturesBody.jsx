@@ -1,19 +1,19 @@
 import React from 'react'
 import PriceSlider from '../Slider/PriceSlider'
 
-const LaptopFeaturesBody = () => {
+const LaptopFeaturesBody = ({nextStep,prevStep}) => {
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
     <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
-      <a className="flex gap-1 mt-3 mb-5">
+      <button onClick={prevStep} className="flex gap-1 mt-3 mb-5">
         <span className="text-pb-dark-gray pl-7">Back</span>
-      </a>
+      </button>
       <div className="">
         <h1 className="text-pb-text text-4xl mb-20 text-center">Which features would you like to include?</h1>
       </div>
       <div className="mx-auto text-pb-dark-blue text-2xl leading-relaxed flex flex-col w-full gap-4">
         <div className="flex flex-center w-full gap-6 mb-9 pl-48">
-          <button className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
+          <button onClick={nextStep} className="bg-white w-56 h-40 rounded-lg fill-pb-orange">
             <span>
               <svg
                 className="h-10 mx-auto"
@@ -39,7 +39,7 @@ const LaptopFeaturesBody = () => {
           </button>
         </div>
         <div className="text-xl w-full text-right mb-40 pr-40">
-          <button className="text-pb-text">
+          <button onClick={nextStep} className="text-pb-text">
             <h3>Skip</h3>
           </button>
         </div>

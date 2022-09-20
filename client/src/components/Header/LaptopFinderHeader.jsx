@@ -1,8 +1,7 @@
 import React from "react";
 import logo from "../../images/logo.png";
-import xMarkIco from "../../images/circle-xmark-light.svg";
 
-const LaptopFinderHeader = ({ setLaptopFinder }) => {
+const LaptopFinderHeader = ({ closeModal }) => {
   return (
     <div className="flex flex-row justify-between bg-sky-900">
       <div className="pl-20 w-full flex text-white gap-4">
@@ -15,7 +14,7 @@ const LaptopFinderHeader = ({ setLaptopFinder }) => {
       <div className="w-full text-white my-auto fill-white">
         <button
           className="float-right mr-24"
-          onClick={() => setLaptopFinder(false)}
+          onClick={closeModal}
         >
           <svg
             className="w-10"
