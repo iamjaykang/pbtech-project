@@ -1,0 +1,120 @@
+.typeTitle {
+
+    text-align: center;
+    margin: 80px;
+    font-size: 55px;
+    position: relative;
+
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+.card {
+    height: max-content;
+    width: 350px;
+    margin-top: 25px;
+    border: #C5C5C5;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 8px;
+    padding-bottom: 50px;
+}
+
+.innerContainer {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 0;
+
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+
+}
+
+.text {
+    color: #0B5078;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 22px;
+}
+.button {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    background: #0B5078;
+    border-radius: 24px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.oldPrice {
+    width: 80%;
+    margin: auto;
+    color: #EF8122;
+}
+
+.newPrice {
+    width: 80%;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 700;
+    color: #3DA6FE;
+}
+
+.star {
+    margin: 2px;
+    width: 20px;
+
+}
+
+.starSection {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.prevButton {
+    height: 35px;
+    width: 35px;
+    border-style: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+}
+
+.nextButton {
+    height: 35px;
+    width: 35px;
+    transform: scaleX(-1);
+    border-style: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+}
+
+.skipButtons {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 92%;
+    margin: auto;
+    bottom: 475px;
+
+}

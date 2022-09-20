@@ -8,6 +8,8 @@ import carouselStyles from "../components/carousel/Carousel.module.css";
 import LaptopTypeButtons from "../components/laptopTypeButtons/LaptopTypeButtons";
 import ContactAndFind from "../components/contactAndFind/ContactAndFind";
 import Brands from "../components/brands/Brands";
+import TopSellerCarousel from '../components/topSellerCarousel/TopSellerCarousel';
+import topCarouselStyles from '../components/topSellerCarousel/TopSellerCarousel.module.css'
 
 function Home() {
   return (
@@ -76,6 +78,7 @@ function Home() {
       <LaptopTypeButtons />
       <ContactAndFind />
       <Brands />
+      <TopSellerCarousel></TopSellerCarousel>
       </div>
     </>
   );
