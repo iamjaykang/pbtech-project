@@ -77,7 +77,7 @@ const LaptopFinderBody = ({ laptopsArray, nextStep, prevStep }) => {
           Most popular laptops
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found 15 products for you!
+          We found {laptopsArray.length} products for you!
         </h3>
         <PriceSlider />
         <ScrollBar laptopsArray={laptopsArray}/>

@@ -1,7 +1,7 @@
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import choicesDockImg from "../../images/choices-dock.png";
 import choicesBackPackImg from "../../images/choices-backpack.png";
-import choicesMouseImg from "../../images/choices-mouse.png";
+import choicesMouseImg from "../../images/mouse.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

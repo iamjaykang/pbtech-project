@@ -10,4 +10,4 @@ const Laptop = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('laptops', Laptop)
+module.exports = mongoose.model('laptops1', Laptop)

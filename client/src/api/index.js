@@ -4,18 +4,16 @@ const api = axios.create({
     baseURL: 'http://localhost:3080/api',
 })
 
-export const insertLaptop = payload => api.post(`/laptop`, payload)
-export const getAllLaptops = () => api.get(`/laptops`)
-export const updateLaptopById = (id, payload) => api.put(`/laptop/${id}`, payload)
-export const deleteLaptopById = id => api.delete(`/laptop/${id}`)
-export const getLaptopById = id => api.get(`/laptop/${id}`)
+export const getAllLaptops = () => api.get(`/laptops1`)
+export const getAllLaptops2 = () => api.get(`/laptops2`)
+export const getAllLaptops3 = () => api.get(`/laptops3`)
+export const getAllLaptops4 = () => api.get(`/laptops4`)
 
 const apis = {
-    insertLaptop,
     getAllLaptops,
-    updateLaptopById,
-    deleteLaptopById,
-    getLaptopById,
+    getAllLaptops2,
+    getAllLaptops3,
+    getAllLaptops4,
 }
 
 export default apis

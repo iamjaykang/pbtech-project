@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import api from "../api";
+import { LaptopsSource } from "../api/LaptopsSource";
 import LaptopFinder from "../components/LaptopFinder/LaptopFinder";
+import { quickSort } from "../utils/QuickSort";
 
 const Home = () => {
   const [laptopsArray, setLaptopsArray] = useState([])
@@ -28,8 +30,9 @@ const Home = () => {
 
   const laptopsApi = async () => {
     try {
-      const laptop = await api.getAllLaptops();
-      setLaptopsArray(laptop.data.data)
+      const laptop = await LaptopsSource.get(`/laptops1`);
+      setLaptopsArray(quickSort(laptop.data.data))
+      console.log(laptop)
     } catch (error) {
       console.log(error);
     }
@@ -38,7 +41,7 @@ const Home = () => {
   useEffect(() => {
     laptopsApi();
     console.log(laptopsArray)
-  }, []);
+  }, [step]);
 
   return (
     <div>
