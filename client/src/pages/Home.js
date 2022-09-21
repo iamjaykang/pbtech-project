@@ -1,16 +1,16 @@
 import HomeStyles from './Home.module.css'
-import Navbar from "../components/navbar/Navbar";
-import Carousel, { CarouselItem } from "../components/carousel/Carousel";
-import image1 from "../components/carousel/carousel1.png";
-import image2 from "../components/carousel/carousel2.jpg";
-import image3 from "../components/carousel/carousel3.jpg";
-import carouselStyles from "../components/carousel/Carousel.module.css";
-import LaptopTypeButtons from "../components/laptopTypeButtons/LaptopTypeButtons";
-import ContactAndFind from "../components/contactAndFind/ContactAndFind";
-import Brands from "../components/brands/Brands";
-import TopSellerCarousel from '../components/topSellerCarousel/TopSellerCarousel';
-import Benefits from '../components/benefits/Benefits';
-import Footer from '../components/footer/Footer';
+import Navbar from "../components/Navbar/Navbar";
+import Carousel, { CarouselItem } from "../components/Carousel/Carousel";
+import image1 from "../components/Carousel/carousel1.png";
+import image2 from "../components/Carousel/carousel2.jpg";
+import image3 from "../components/Carousel/carousel3.jpg";
+import carouselStyles from "../components/Carousel/Carousel.module.css";
+import LaptopTypeButtons from "../components/LaptopTypeButtons/LaptopTypeButtons";
+import ContactAndFind from "../components/ContactAndFind/ContactAndFind";
+import Brands from "../components/Brands/Brands";
+import TopSellerCarousel from '../components/TopSellerCarousel/TopSellerCarousel';
+import Benefits from '../components/Benefits/Benefits';
+import Footer from '../components/Footer/Footer';
 
 
 function Home() {
