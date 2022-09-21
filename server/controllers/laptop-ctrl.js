@@ -51,7 +51,7 @@ updateLaptop = async (req, res) => {
             })
         }
         laptop.name = body.name
-        laptop.time = body.time
+        laptop.description = body.description
         laptop.rating = body.rating
         laptop
             .save()

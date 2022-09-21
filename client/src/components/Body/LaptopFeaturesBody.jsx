@@ -17,7 +17,7 @@ const LaptopFeaturesBody = ({ nextStep, prevStep }) => {
           <div className="flex flex-center w-full gap-6 mb-9 pl-48">
             <button
               onClick={nextStep}
-              className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl shadow-2xl"
+              className="bg-white w-56 h-40 rounded-lg fill-pb-orange shadow-2xl"
             >
               <span>
                 <svg
