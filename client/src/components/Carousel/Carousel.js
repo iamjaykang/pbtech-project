@@ -12,9 +12,8 @@ export const CarouselItem = ({ children, width }) => {
     );
 };
 /* Main controller.*/
-const Carousel = ({ children }) => {
+const Carousel = ({ children, setPaused, paused, step}) => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [paused, setPaused] = useState(false);
     /*Allows carousel to swipe from first to last, or last to first image at each end*/
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {
@@ -49,7 +48,7 @@ const Carousel = ({ children }) => {
             {...handlers} /*Applies swipe handlers to carousel */
             className={carouselStyles.carousel} /*Event handlers to check mouse hover/not hover event above */
             onMouseEnter={() => setPaused(true)}
-            onMouseLeave={() => setPaused(false)}
+            onMouseLeave={() => {step === 0 && setPaused(false)}}
             >
             <div
                 

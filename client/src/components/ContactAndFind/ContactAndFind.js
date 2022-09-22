@@ -4,7 +4,7 @@ import img2 from '../../images/laptop.png';
 import img3 from '../../images/Eclipse.png';
 import img4 from '../../images/Rectangle.png';
 
-function ContactAndFind () {
+function ContactAndFind ({nextStep}) {
     return (
         <>
         <img className={contactStyles.outerImage} src={img3} alt=''/>
@@ -34,7 +34,7 @@ function ContactAndFind () {
                 <p>Whether you're after using your laptop for <br /> 
                 work, school, gaming, or personal use, we <br />
                 can point you in the right direction</p>
-                <button className={contactStyles.button2}>Start your search</button>
+                <button onClick={nextStep} className={contactStyles.button2}>Start your search</button>
                 </div>
                 <img className={contactStyles.laptop} src={img2} alt=''/>
             </div>

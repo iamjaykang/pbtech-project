@@ -29,6 +29,7 @@ const Home = () => {
   // proceed to the next step
   const nextStep = () => {
     setStep(step + 1);
+    setPaused(true);
   };
 
   // close Modal
@@ -55,11 +56,13 @@ const Home = () => {
     console.log(laptopsArray)
   }, [step]);
 
+  const [paused, setPaused] = useState(false);
+
   return (
     <>
     <Navbar />
     <div className={HomeStyles.page}>
-    <Carousel>
+    <Carousel step={step} setPaused={setPaused} paused={paused}>
       <CarouselItem>
         <img
           src={image1}
@@ -120,7 +123,7 @@ const Home = () => {
       </CarouselItem>
     </Carousel>
     <LaptopTypeButtons />
-    <ContactAndFind />
+    <ContactAndFind nextStep={nextStep}/>
     <Brands />
     <TopSellerCarousel />
     <Benefits />
