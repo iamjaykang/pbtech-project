@@ -1,0 +1,132 @@
+.carousel {
+    /* hides overflow content, so only active item is visible */
+    overflow: hidden; 
+    position: relative;
+    width: 100%;
+}
+
+/* line 13: keeps items in 1 line, prevents the default behaviour of breaking into a new line
+   line 14:  transition animation time*/
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+
+}
+/* Carousel item styling */
+.carouselItem {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+.carouselImage {
+    width: 100%;
+}
+
+
+.indicators {
+    display: flex;
+
+    z-index: 2;
+    padding: 5px;
+
+}
+
+.indicators > button {
+    margin:  15px;
+    border-radius: 50%;
+    opacity: 66%;
+    width: 12px;
+    height: 12px;
+    background: #e6f0f6e0;
+    border: none;
+    position: relative;
+    bottom: 50px;
+    font-display: none;
+}
+
+
+.indicators > .previous {
+    position: relative;
+    background: #e6f0f6e0;
+    transform: scaleX(-1);
+    margin-right: 45%;
+    bottom: 475px;
+    border-radius: 4px;
+    width: 33px;
+    height: 33px;
+    left: -17px;
+}
+
+.indicators > .next {
+
+    position: relative;
+    border-radius: 4px;
+    bottom: 475px;
+    border-radius: 0;
+    width: 33px;
+    height: 33px;
+    margin-left: 45%;
+}
+
+.indicators > button.active {
+    background: #EF8122;
+    opacity: 100%;
+}
+
+
+.overlayBG {
+    background: #e6f0f6e0;
+    z-index: 10;
+    position: absolute;
+    color: #0B5078;
+    padding: 50px 100px;
+    border-radius: 8px;
+    margin-right: 49%;
+    margin-bottom: 1%;
+}
+
+.overlayTitle {
+    font-size: 64px;
+}
+
+.overlayText {
+    font-size: 21px;
+}
+
+.overlayButton {
+    background: #EF8122;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 67%;
+    cursor: pointer;
+}
+
+.overlayButton2 {
+    background: #EF8122;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+    cursor: pointer;
+}
+.overlayButton3 {
+    background: #EF8122;
+    border-radius: 30px;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 65%;
+    cursor: pointer;
+}

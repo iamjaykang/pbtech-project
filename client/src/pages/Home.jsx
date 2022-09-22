@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
-import api from "../api";
 import { LaptopsSource } from "../api/LaptopsSource";
 import LaptopFinder from "../components/LaptopFinder/LaptopFinder";
 import { quickSort } from "../utils/QuickSort";
+import HomeStyles from './Home.module.css';
+import Navbar from '../components/NavBar/Navbar';
+import Carousel, { CarouselItem } from "../components/Carousel/Carousel";
+import image1 from "../images/carousel1.png";
+import image2 from "../images/carousel2.jpg";
+import image3 from "../images/carousel3.jpg";
+import carouselStyles from "../components/Carousel/Carousel.module.css";
+import LaptopTypeButtons from "../components/LaptopTypeButtons/LaptopTypeButtons";
+import ContactAndFind from "../components/ContactAndFind/ContactAndFind";
+import Brands from "../components/Brands/Brands";
+import TopSellerCarousel from '../components/TopSellerCarousel/TopSellerCarousel';
+import Benefits from '../components/Benefits/Benefits';
+import Footer from '../components/Footer/Footer';
 
 const Home = () => {
   const [laptopsArray, setLaptopsArray] = useState([])
@@ -44,18 +56,77 @@ const Home = () => {
   }, [step]);
 
   return (
-    <div>
-      Home
-      <button
-        to="/laptop-finder"
-        className="mt-4 block w-full md:w-auto text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        type="button"
-        onClick={nextStep}
-      >
-        Laptop Finder
-      </button>
+    <>
+    <Navbar />
+    <div className={HomeStyles.page}>
+    <Carousel>
+      <CarouselItem>
+        <img
+          src={image1}
+          alt=""
+          className={carouselStyles.carouselImage}
+        ></img>
+        <div className={carouselStyles.overlayBG}>
+          <h1 className={carouselStyles.overlayTitle}>
+            Find the best laptop <br /> for your business
+          </h1>
+          <h3 className={carouselStyles.overlayText}>
+            Looking for a perfect laptop for your office? Use our <br />
+            custom tool for prices and features
+          </h3>
+          <button onClick={nextStep} className={carouselStyles.overlayButton}>
+            Find a laptop now
+          </button>
+        </div>
+      </CarouselItem>
+      <CarouselItem>
+        <img
+          src={image2}
+          alt=""
+          className={carouselStyles.carouselImage}
+        ></img>
+        <div className={carouselStyles.overlayBG}>
+          <h1 className={carouselStyles.overlayTitle}>
+            Exclusive deals for <br /> business owners
+          </h1>
+          <h3 className={carouselStyles.overlayText}>
+            Gain access to PB Tech's commercial pricing and <br />
+            features such as leasing and flexibles payments
+          </h3>
+          <button className={carouselStyles.overlayButton2}>
+            Apply for a business account
+          </button>
+        </div>
+      </CarouselItem>
+      <CarouselItem>
+        <img
+          src={image3}
+          alt=""
+          className={carouselStyles.carouselImage}
+        ></img>
+        <div className={carouselStyles.overlayBG}>
+          <h1 className={carouselStyles.overlayTitle}>
+            We're happy to help <br /> with anything
+          </h1>
+          <h3 className={carouselStyles.overlayText}>
+            Let our PB Tech experts help you navigate your tech <br />
+            woes so you can focus on running your business
+          </h3>
+          <button className={carouselStyles.overlayButton3}>
+            Talk to our team
+          </button>
+        </div>
         <LaptopFinder laptopsArray={laptopsArray} closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
+      </CarouselItem>
+    </Carousel>
+    <LaptopTypeButtons />
+    <ContactAndFind />
+    <Brands />
+    <TopSellerCarousel />
+    <Benefits />
+    <Footer />
     </div>
+  </>
   );
 };
 
