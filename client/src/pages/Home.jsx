@@ -62,6 +62,9 @@ const Home = () => {
     <>
     <Navbar />
     <div className={HomeStyles.page}>
+    <div>
+    <LaptopFinder laptopsArray={laptopsArray} closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
+    </div>
     <Carousel step={step} setPaused={setPaused} paused={paused}>
       <CarouselItem>
         <img
