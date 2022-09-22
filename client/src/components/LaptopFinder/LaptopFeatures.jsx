@@ -3,7 +3,7 @@ import LaptopFeaturesBody from '../Body/LaptopFeaturesBody'
 import LaptopFinderHeader from '../Header/LaptopFinderHeader'
 import LaptopFinderNavBar from '../NavBar/LaptopFinderNavBar'
 
-const LaptopFeatures = ({setStep, step, closeModal,nextStep,prevStep}) => {
+const LaptopFeatures = ({laptopsArray, setStep, step, closeModal,nextStep,prevStep}) => {
   return (
     <>
     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
@@ -15,7 +15,7 @@ const LaptopFeatures = ({setStep, step, closeModal,nextStep,prevStep}) => {
           {/*nav*/}
           <LaptopFinderNavBar setStep={setStep} step={step}/>
           {/*body*/}
-          <LaptopFeaturesBody prevStep={prevStep} nextStep={nextStep}/>
+          <LaptopFeaturesBody laptopsArray={laptopsArray} prevStep={prevStep} nextStep={nextStep}/>
           {/*footer*/}
         </div>
       </div>

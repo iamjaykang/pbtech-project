@@ -1,17 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import PriceSlider from "../Slider/PriceSlider";
 import businessImg from "../../images/business.png";
 import ChoicesSwiper from "../Carousel/ChoicesSwiper";
 import RestartButton from "../Buttons/RestartButton";
+import LaptopFinderCard from "../LaptopFinderCard/LaptopFinderCard";
 
-const LaptopChoicesBody = ({ prevStep, nextStep, restartModal }) => {
+const LaptopChoicesBody = ({ laptopsArray, restartModal }) => {
+  const filteredItems = laptopsArray.filter(item => item.category.includes('Work,2in1'))
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
-        {/* <button 
-        onClick={restartModal} className="flex gap-1 mt-6">
-          <span className="text-pb-dark-gray pl-6 mb-11">Restart</span>
-        </button> */}
         <RestartButton restartModal={restartModal} />
         <div className="">
           <h1 className="text-pb-text text-4xl ml-20 mb-10">
@@ -49,9 +47,16 @@ const LaptopChoicesBody = ({ prevStep, nextStep, restartModal }) => {
           Our top picks
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found 5 products for you!
+          We found {filteredItems.length} products for you!
         </h3>
         <PriceSlider />
+        <div className="mx-auto h-[360px] w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+          <div className="h-[720px] bg-pb-light-gray">
+            {filteredItems.map((filteredItem, index) => {
+              return <LaptopFinderCard item={filteredItem} index={index} />;
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );

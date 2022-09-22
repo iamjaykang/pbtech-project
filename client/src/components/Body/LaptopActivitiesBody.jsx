@@ -1,7 +1,8 @@
 import React from "react";
+import ScrollBar from "../ScrollBar/ScrollBar";
 import PriceSlider from "../Slider/PriceSlider";
 
-const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
+const LaptopActivitiesBody = ({ laptopsArray, prevStep, nextStep }) => {
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
@@ -88,9 +89,10 @@ const LaptopActivitiesBody = ({ prevStep, nextStep }) => {
           You may also like...
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found 15 products for you!
+          We found {laptopsArray.length} products for you!
         </h3>
         <PriceSlider />
+        <ScrollBar laptopsArray={laptopsArray}/>
       </div>
     </div>
   );

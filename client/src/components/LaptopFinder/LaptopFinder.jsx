@@ -12,11 +12,11 @@ export default function LaptopFinder({ laptopsArray, restartModal, setStep, step
       case 1:
         return <LaptopFinderHome laptopsArray={laptopsArray} setStep={setStep} step={step} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       case 2:
-        return <LaptopFinderActivities setStep={setStep} step={step} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
+        return <LaptopFinderActivities laptopsArray={laptopsArray} setStep={setStep} step={step} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       case 3:
-        return <LaptopFeatures setStep={setStep} step={step} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
+        return <LaptopFeatures laptopsArray={laptopsArray} setStep={setStep} step={step} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       case 4:
-        return <LaptopChoices setStep={setStep} restartModal={restartModal} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
+        return <LaptopChoices laptopsArray={laptopsArray} setStep={setStep} restartModal={restartModal} closeModal={closeModal} prevStep={prevStep} nextStep={nextStep} />;
       default:
         return null;
     }

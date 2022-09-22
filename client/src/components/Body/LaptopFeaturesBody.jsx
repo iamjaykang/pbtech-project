@@ -1,7 +1,9 @@
 import React from "react";
 import PriceSlider from "../Slider/PriceSlider";
+import LaptopFinderCard from "../LaptopFinderCard/LaptopFinderCard";
 
-const LaptopFeaturesBody = ({ nextStep, prevStep }) => {
+const LaptopFeaturesBody = ({ laptopsArray, nextStep, prevStep }) => {
+  const filteredItems = laptopsArray.filter(item => item.category.includes('Work,Business'))
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
@@ -55,9 +57,16 @@ const LaptopFeaturesBody = ({ nextStep, prevStep }) => {
           You may also like...
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found 10 products for you!
+          We found {filteredItems.length} products for you!
         </h3>
         <PriceSlider />
+        <div className="mx-auto h-[360px] w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+          <div className="h-[720px] bg-pb-light-gray">
+            {filteredItems.map((filteredItem, index) => (
+              <LaptopFinderCard item={filteredItem} index={index} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
