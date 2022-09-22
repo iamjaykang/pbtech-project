@@ -5,6 +5,7 @@
     font-size: 55px;
     position: relative;
     color: #0B5078;
+    font-weight: 700;
 }
 
 .container {
@@ -27,6 +28,7 @@
     border-style: solid;
     border-radius: 8px;
     padding-bottom: 50px;
+    box-shadow: 10px;
 }
 
 .innerContainer {
@@ -49,17 +51,17 @@
     font-size: 24px;
     font-weight: 800;
     text-align: center;
-    padding-top: 22px;
+    padding: 28px;
+    white-space: nowrap;
 }
 .button {
-    padding: 10px;
     width: 80%;
     margin: auto;
     background: #0B5078;
     border-radius: 24px;
     height: 50px;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -81,7 +83,7 @@
 .star {
     margin: 2px;
     width: 20px;
-
+    display: inline-flex;
 }
 
 .starSection {
@@ -116,5 +118,4 @@
     width: 92%;
     margin: auto;
     bottom: 475px;
-
 }

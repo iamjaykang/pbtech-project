@@ -28,7 +28,7 @@
     height: 17px;
     width: 17px;
     margin-right: -35px;
-    margin-top: 10px;
+    margin-top: 7px;
     position: relative;
     cursor: pointer;
 }
@@ -40,7 +40,7 @@
     padding: 2px 50px;
     border-radius: 8px;
     border-style: none;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .icons {
@@ -88,10 +88,10 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
     position: relative;
     bottom: 8px;
-    
+    margin-left: 35px;
+    margin-top:15px
 }
 
 
@@ -100,8 +100,8 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
-    font-weight: 500;
-    margin: 15px;
+    font-weight: 600;
+    margin: 22px;
 
 }
 
@@ -109,8 +109,7 @@
     position: relative;
     height: 15px;
     width: 15px;
-    margin-right: 5px;
     filter: invert(100%);
-    margin-left: -8px;
-    top: 2.5px;
+    display: inline-block;
+    margin-left: -12px;
 }

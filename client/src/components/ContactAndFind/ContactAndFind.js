@@ -17,8 +17,8 @@ function ContactAndFind ({nextStep}) {
             <div className={contactStyles.phoebeDiv}> 
                 
                 <div className={contactStyles.info}>
-                <h1>Ask Phoebe</h1>
-                <p>Can't find what you are looking for? <br /> 
+                <h1 className={contactStyles.titles}>Ask Phoebe</h1>
+                <p>Can't find what you're looking for? <br /> 
                 Get online shopping help from <br />
                 our friendly team</p>
                 <button className={contactStyles.button}>Schedule a call</button>
@@ -30,7 +30,7 @@ function ContactAndFind ({nextStep}) {
             
             <div className={contactStyles.finderDiv}> 
             <div className={contactStyles.info}>
-                <h1>Try our laptop finder</h1>
+                <h1 className={contactStyles.titles}>Try our laptop finder</h1>
                 <p>Whether you're after using your laptop for <br /> 
                 work, school, gaming, or personal use, we <br />
                 can point you in the right direction</p>

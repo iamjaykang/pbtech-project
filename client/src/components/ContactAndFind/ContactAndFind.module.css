@@ -8,14 +8,10 @@
 
 }
 
-
-.phoebe {
-    float: right;
-    margin-right: 30px;
-    position: relative;
-    bottom: 336px;
-    height: 350px;
-    
+.titles {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .info {
@@ -25,8 +21,16 @@
     
 }
 
+.phoebe {
+    float: right;
+    position: relative;
+    height: 365px;
+    bottom: 347px;
+    right: 35px;
+}
+
 .button {
-    margin-top: 25px;
+    margin-top: 45px;
     background: #EF8122;
     border-color: white;
     border-radius: 45px;
@@ -35,19 +39,20 @@
     font-size: 20px;
     padding: 12px 50px;
     cursor: pointer;
+    border-width: 2px;
 }
 
 .phoebeDiv {
     background: #EF8122;
     width: 49%;
-    height: 380px;
+    height: 390px;
     z-index: 3;
     border-radius: 8px;
     
 }
 
 .button2 {
-    margin-top: 25px;
+    margin-top: 45px;
     background: #EF8122;
     border-radius: 45px;
     border-style: none;
@@ -62,7 +67,7 @@
 .finderDiv {
     background: #0B5078;
     width: 49%;
-    height: 380px;
+    height: 390px;
     z-index: 3;
     border-radius: 8px;
 }

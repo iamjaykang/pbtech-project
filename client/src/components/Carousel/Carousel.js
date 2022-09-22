@@ -68,8 +68,19 @@ const Carousel = ({ children, setPaused, paused, step}) => {
                 >  
                     <img src={arrow} alt=""/>
                 </button>
-                {/* Below code to display page labels */}
-                {React.Children.map(children, (child, index) => {
+               
+                <button className={carouselStyles.next}
+                    onClick={() => {
+                        updateIndex(activeIndex + 1);
+                    }}
+                >
+                    <img src={arrow} alt=""/>
+                </button>
+
+            </div>
+            <div className={carouselStyles.indexes}>
+             {/* Below code to display page labels */}
+             {React.Children.map(children, (child, index) => {
                     return (
                         /* className line allows us to customize the current active index
                          to highlight which index is active  */
@@ -81,16 +92,7 @@ const Carousel = ({ children, setPaused, paused, step}) => {
                         >
                         </button>
                     );
-                })}
-                <button className={carouselStyles.next}
-                    onClick={() => {
-                        updateIndex(activeIndex + 1);
-                    }}
-                >
-                    <img src={arrow} alt=""/>
-                </button>
-
-            </div>
+                })}</div>
         </div>
     );
 };
