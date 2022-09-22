@@ -8,7 +8,7 @@ const LaptopFinderCard = ({ item, index }) => {
       </div>
       <div className="px-4">
         <div className="text-pb-text text-base">{item.name}</div>
-        <div className="text-pb-orange text-2xl">{item.price}</div>
+        <div className="text-pb-orange text-2xl"><span className="text-pb-orange text-lg align-text-top">$</span>{item.price}</div>
         <button className="text-pb-sky-blue text-sm underline">View Details</button>
       </div>
     </div>

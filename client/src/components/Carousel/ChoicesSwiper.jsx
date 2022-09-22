@@ -23,31 +23,31 @@ export default () => {
       onSlideChange={() => console.log("slide change")}
     >
       <SwiperSlide>
-        <div>
+        <div className="mx-auto">
           <h4 className="text-base text-center">MacBook Dock</h4>
           <img src={choicesDockImg} />
           <h3 className="text-lg text-center text-pb-orange">$60</h3>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div>
+        <div className="">
           <h4 className="text-base text-center">Bellroy Backpack</h4>
-          <img src={choicesBackPackImg} />
+          <img className="" src={choicesBackPackImg} />
           <h3 className="text-lg text-center text-pb-orange">$45</h3>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div>
-          <h4 className="text-base text-center">Mouse</h4>
-          <img src={choicesMouseImg} />
-          <h3 className="text-lg text-center text-pb-orange">$320</h3>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div>
           <h4 className="text-base text-center">MacBook Dock</h4>
           <img className="my-auto mx-auto" src={choicesDockImg} />
-          <h3 className="text-lg text-center">$60</h3>
+          <h3 className="text-lg text-center text-pb-orange">$60</h3>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div>
+          <h4 className="text-base text-center">MacBook Dock</h4>
+          <img className="my-auto mx-auto" src={choicesDockImg} />
+          <h3 className="text-lg text-center text-pb-orange">$60</h3>
         </div>
       </SwiperSlide>
     </Swiper>
