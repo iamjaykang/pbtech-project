@@ -78,8 +78,8 @@ const LaptopChoicesBody = ({ laptopsArray, restartModal }) => {
           We found {filteredItems.length} products for you!
         </h3>
         <PriceSlider />
-        <div className="mx-auto h-[360px] w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
-          <div className="h-[720px] bg-pb-light-gray">
+        <div className="mx-auto h-[36rem] w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+          <div className="h-[72rem] bg-pb-light-gray">
             {filteredItems.map((filteredItem, index) => {
               return <LaptopFinderCard item={filteredItem} index={index} />;
             })}
