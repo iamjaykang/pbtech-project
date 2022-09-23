@@ -2,8 +2,9 @@ import React from "react";
 import PriceSlider from "../Slider/PriceSlider";
 import LaptopFinderCard from "../LaptopFinderCard/LaptopFinderCard";
 
-const LaptopFeaturesBody = ({ laptopsArray, nextStep, prevStep }) => {
+const LaptopFeaturesBody = ({value, setValue, laptopsArray, nextStep, prevStep }) => {
   const filteredItems = laptopsArray.filter(item => item.category.includes('Work,Business'))
+  const filteredByPrice = filteredItems.filter(item => item.price < value)
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
@@ -57,12 +58,12 @@ const LaptopFeaturesBody = ({ laptopsArray, nextStep, prevStep }) => {
           You may also like...
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found {filteredItems.length} products for you!
+          We found {filteredByPrice.length} products for you!
         </h3>
-        <PriceSlider />
+        <PriceSlider value={value} setValue={setValue}/>
         <div className="mx-auto h-96 w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
           <div className="h-[60rem] bg-pb-light-gray">
-            {filteredItems.map((filteredItem, index) => (
+            {filteredByPrice.map((filteredItem, index) => (
               <LaptopFinderCard item={filteredItem} index={index} />
             ))}
           </div>

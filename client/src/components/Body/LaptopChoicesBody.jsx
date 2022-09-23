@@ -9,8 +9,9 @@ import addToCartBtn from "../../images/add-to-cart-btn.png";
 import seeDetailsBtn from "../../images/see-details-btn.png";
 import onlyImgIco from "../../images/button-with-icon only.png";
 
-const LaptopChoicesBody = ({ laptopsArray, restartModal }) => {
+const LaptopChoicesBody = ({ value, setValue, laptopsArray, restartModal }) => {
   const filteredItems = laptopsArray.filter(item => item.category.includes('Work,2in1'))
+  const filteredByPrice = filteredItems.filter(item => item.price < value)
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
@@ -75,12 +76,12 @@ const LaptopChoicesBody = ({ laptopsArray, restartModal }) => {
           Our top picks
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found {filteredItems.length} products for you!
+          We found {filteredByPrice.length} products for you!
         </h3>
-        <PriceSlider />
+        <PriceSlider value={value} setValue={setValue}/>
         <div className="mx-auto h-[36rem] w-72 scrollbar-thin scrollbar-thumb-pb-scroll-thumb scrollbar-track-pb-scroll overflow-y-scroll scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
           <div className="h-[72rem] bg-pb-light-gray">
-            {filteredItems.map((filteredItem, index) => {
+            {filteredByPrice.map((filteredItem, index) => {
               return <LaptopFinderCard item={filteredItem} index={index} />;
             })}
           </div>
