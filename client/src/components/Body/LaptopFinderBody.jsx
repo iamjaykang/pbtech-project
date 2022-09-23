@@ -2,7 +2,8 @@ import React from "react";
 import ScrollBar from "../ScrollBar/ScrollBar";
 import PriceSlider from "../Slider/PriceSlider";
 
-const LaptopFinderBody = ({ laptopsArray, nextStep, prevStep }) => {
+const LaptopFinderBody = ({value, setValue, laptopsArray, nextStep, prevStep }) => {
+  const filteredByPrice = laptopsArray.filter(item => item.price < value)
   return (
     <div className="relative flex flex-row px-24 mb-5 mt-8">
       <div className="w-4/6 bg-pb-container-bg rounded-l-3xl">
@@ -77,10 +78,10 @@ const LaptopFinderBody = ({ laptopsArray, nextStep, prevStep }) => {
           Most popular laptops
         </h2>
         <h3 className="text-pb-orange text-xl ml-[92px]">
-          We found {laptopsArray.length} products for you!
+          We found {filteredByPrice.length} products for you!
         </h3>
-        <PriceSlider />
-        <ScrollBar laptopsArray={laptopsArray}/>
+        <PriceSlider value={value} setValue={setValue}/>
+        <ScrollBar laptopsArray={filteredByPrice}/>
       </div>
     </div>
   );

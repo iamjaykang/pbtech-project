@@ -19,6 +19,8 @@ import Footer from '../components/Footer/Footer';
 const Home = () => {
   const [laptopsArray, setLaptopsArray] = useState([])
 
+  const [value, setValue] = useState(2600);
+
   const [step, setStep] = useState(0);
 
   // proceed to the previous step
@@ -45,7 +47,6 @@ const Home = () => {
     try {
       const laptop = await LaptopsSource.get(`/laptops1`);
       setLaptopsArray(quickSort(laptop.data.data))
-      console.log(laptop)
     } catch (error) {
       console.log(error);
     }
@@ -63,7 +64,7 @@ const Home = () => {
     <Navbar />
     <div className={HomeStyles.page}>
     <div>
-    <LaptopFinder laptopsArray={laptopsArray} closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
+    <LaptopFinder value={value} setValue={setValue} laptopsArray={laptopsArray} closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
     </div>
     <Carousel step={step} setPaused={setPaused} paused={paused}>
       <CarouselItem>

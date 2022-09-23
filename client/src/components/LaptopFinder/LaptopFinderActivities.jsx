@@ -3,7 +3,7 @@ import LaptopActivitiesBody from '../Body/LaptopActivitiesBody'
 import LaptopFinderHeader from '../Header/LaptopFinderHeader'
 import LaptopFinderNavBar from '../NavBar/LaptopFinderNavBar'
 
-const LaptopFinderActivities = ({laptopsArray, setStep, step, closeModal,prevStep, nextStep}) => {
+const LaptopFinderActivities = ({value, setValue, laptopsArray, setStep, step, closeModal,prevStep, nextStep}) => {
   return (
     <>
     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
@@ -15,7 +15,7 @@ const LaptopFinderActivities = ({laptopsArray, setStep, step, closeModal,prevSte
           {/*nav*/}
           <LaptopFinderNavBar setStep={setStep} step={step}/>
           {/*body*/}
-          <LaptopActivitiesBody laptopsArray={laptopsArray} prevStep={prevStep} nextStep={nextStep}/>
+          <LaptopActivitiesBody value={value} setValue={setValue} laptopsArray={laptopsArray} prevStep={prevStep} nextStep={nextStep}/>
           {/*footer*/}
         </div>
       </div>
