@@ -4,6 +4,7 @@
     font-size: 55px;
     margin-top: 140px;
     margin-bottom: 80px;
+    font-weight: 700;
 }
 
 .mainContainer {
@@ -26,15 +27,14 @@
 }
 
 .image {
-    width: 147px;
-    height: 57px;
+    scale: 1.2;
     border-style: solid;
     border-color: #F6F8FB;
     border-width: 2px;
     border-radius: 8px;
     margin: auto;
     display: flex;
-    padding: 20px 120px;
+    padding: 20px 80px;
 
 }
 

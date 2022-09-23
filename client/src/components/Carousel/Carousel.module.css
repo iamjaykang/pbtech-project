@@ -5,8 +5,7 @@
     width: 100%;
 }
 
-/* line 13: keeps items in 1 line, prevents the default behaviour of breaking into a new line
-   line 14:  transition animation time*/
+
 .inner {
     white-space: nowrap;
     transition: transform 0.3s;
@@ -17,7 +16,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     color: #fff;
 }
 
@@ -25,54 +23,57 @@
     width: 100%;
 }
 
+.indexes {
+    text-align: center;
+    margin-top: -120px;
+    margin-bottom: 175px;
+}
 
 .indicators {
     display: flex;
-
     z-index: 2;
-    padding: 5px;
+    justify-content: space-between;
+    position: relative;
+    bottom: 475px;
 
 }
 
-.indicators > button {
-    margin:  15px;
+.indexes > button {
     border-radius: 50%;
-    opacity: 66%;
-    width: 12px;
-    height: 12px;
-    background: #e6f0f6e0;
+    opacity: 99%;
+    width: 16px;
+    height: 16px;
+    background: #C4C4C4;
     border: none;
     position: relative;
-    bottom: 50px;
     font-display: none;
+    margin: 8px;
+
 }
 
 
 .indicators > .previous {
     position: relative;
-    background: #e6f0f6e0;
     transform: scaleX(-1);
-    margin-right: 45%;
-    bottom: 475px;
     border-radius: 4px;
-    width: 33px;
-    height: 33px;
-    left: -17px;
+    width: 45px;
+    height: 43px;
+    display: flex;
+    padding: 10px;
 }
 
 .indicators > .next {
-
     position: relative;
     border-radius: 4px;
-    bottom: 475px;
-    border-radius: 0;
-    width: 33px;
-    height: 33px;
-    margin-left: 45%;
+    width: 45px;
+    height: 43px;
+    display: flex;
+    padding: 10px;
+
 }
 
-.indicators > button.active {
-    background: #EF8122;
+.indexes > button.active {
+    background: #3DA6FE;
     opacity: 100%;
 }
 
@@ -82,18 +83,22 @@
     z-index: 10;
     position: absolute;
     color: #0B5078;
-    padding: 50px 100px;
+    padding: 60px 90px;
     border-radius: 8px;
-    margin-right: 49%;
+    margin-right: 47%;
     margin-bottom: 1%;
 }
 
 .overlayTitle {
     font-size: 64px;
+    font-weight: 700;
 }
 
 .overlayText {
-    font-size: 21px;
+    font-size: 23px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .overlayButton {
