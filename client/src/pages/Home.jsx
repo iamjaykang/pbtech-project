@@ -122,7 +122,6 @@ const Home = () => {
             Talk to our team
           </button>
         </div>
-        <LaptopFinder laptopsArray={laptopsArray} closeModal={closeModal} restartModal={restartModal} setStep={setStep} step={step} prevStep={prevStep} nextStep={nextStep}/>
       </CarouselItem>
     </Carousel>
     <LaptopTypeButtons />
