@@ -24,10 +24,10 @@ const LaptopChoicesBody = ({ laptopsArray, restartModal }) => {
           <div className="flex flex-center w-full gap-6 mb-4 pl-20">
             <div className="w-[700px] h-72 flex bg-white border border-black rounded-lg shadow-lg">
               <div className="my-auto">
-              <img className="mx-auto my-auto w-48 h-40" src={filteredItems[0].imgUrl} />
+              <img className="ml-4 my-auto w-48 h-40" src={filteredItems[0].imgUrl} />
               </div>
               <div className="p-10">
-                <div className="text-3xl text-pb-dark-blue pb-2.5 font-bold">{filteredItems[0].name}</div>
+                <div className="text-3xl text-pb-dark-blue pt-2.5 pb-6 font-bold">{filteredItems[0].name}</div>
                 <div className="text-4xl text-pb-orange flex gap-8 font-bold">
                   <div className="pb-10">
                   <span>$</span>{filteredItems[0].price}

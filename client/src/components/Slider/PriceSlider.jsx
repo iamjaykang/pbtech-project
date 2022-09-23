@@ -8,7 +8,7 @@ const Input = styled(MuiInput)`
 `;
 
 const PriceSlider = () => {
-  const [value, setValue] = React.useState(30);
+  const [value, setValue] = React.useState(100);
 
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
@@ -29,10 +29,10 @@ const PriceSlider = () => {
     <div>
       <div className="flex w-full gap-[118px] ml-[92px]">
         <h3 className="text-pb-text text-xl">Max Price</h3>
-        <h3 className="text-pb-gray text-xl">$2500</h3>
+        <h3 className="text-pb-gray text-xl">$2600</h3>
       </div>
         <Slider
-          value={typeof value === "number" ? value : 0}
+          value={typeof value === "number" ? value : 100}
           onChange={handleSliderChange}
           aria-labelledby="input-slider"
           className="w-[260px] ml-[92px]"
