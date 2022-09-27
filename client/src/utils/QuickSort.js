@@ -4,10 +4,10 @@ export const quickSort = (list) => {
     let left = [];
     let right = [];
     for (let i = 1, total = list.length; i < total; i++) {
-      if (list[i].name < pivot.name) left.push(list[i]);
+      if (list[i].price < pivot.price) left.push(list[i]);
       else right.push(list[i]);
     }
-    return [...quickSort(left), pivot, ...quickSort(right)];
+    return [...quickSort(right), pivot, ...quickSort(left)];
   };
   
   const utils = {
